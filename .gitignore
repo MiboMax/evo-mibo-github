@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+conda-env/
+
+# Training outputs and large artifacts
+checkpoints/
+pretrained_ckpt/
+logs/
+rollouts/
+runs/
+wandb/
+swanlog/
+tensorboard/
+outputs/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Datasets and generated media
+data/
+datasets/
+*.hdf5
+*.h5
+*.parquet
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# System/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

@@ -1,0 +1,38 @@
+# Core Evo-Mibo training stack
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.39.0
+accelerate
+deepspeed
+timm
+einops
+diffusers
+fvcore
+ninja
+
+# Data loading / LeRobot-style dataset utilities
+numpy
+pandas
+pyarrow
+pyyaml
+h5py
+scipy>=1.7.0
+tqdm
+av
+opencv-python
+Pillow
+
+# Logging and plots
+matplotlib
+swanlab
+wandb
+
+# Inference server and rollout
+websockets
+gymnasium==1.0.0
+mujoco==3.1.6
+ffmpeg-python
+imageio>=2.14.1
+videoio==0.3.0
+
+

@@ -1,0 +1,20 @@
+# Demo dataset config for the public HSR tomato-can-box dataset.
+# Download the Hugging Face dataset into:
+#   data/HSR_TomatoCanBoxRandomRectRealMatchMix80_RGB15_HandInvDepth005to200_State27_BinaryGripper025_InitialScene_20260621_20260720_lerobot_v21
+#
+# State: no_wrench15 + 4 * [dx, dy, valid] = 27 dimensions.
+max_action_dim: 9
+max_state_dim: 27
+max_views: 3
+normalization_type: bounds
+datasets_manifest: demo_hsr_tomato_randomrect_realmatch_mix80_state27_manifest.pkl
+
+data_groups:
+  hsr:
+    tomato_can_box_randomrect_realmatch_mix80_demo:
+      path: data/HSR_TomatoCanBoxRandomRectRealMatchMix80_RGB15_HandInvDepth005to200_State27_BinaryGripper025_InitialScene_20260621_20260720_lerobot_v21
+      view_map:
+        image_1: observation.images.head_rgb_image
+        image_2: observation.images.hand_rgb_image
+        image_3: observation.images.hand_depth_image
+      use_delta_action: false
